@@ -1,20 +1,27 @@
-
+html, body {
+  height: 100%;
+  background: #E9D7D1;
+}
 img {
   width: 100%;
 }
 
-body {
-  background: #E9D7D1;
+div.container {
+  height: 100%;	
+  display: flex;
+  justify-content: center; /* align horizontally */
+  align-items: center; /* align vertically */
+
 }
 
 div.content {
   max-width: 50em;
-  margin: 2em auto;
+  padding: 2em;
 }
 
 div.header {
-  margin: 4em 0;
-  width: 80%;
+  margin-bottom: 2em;
+  max-width: 30em;
 }
 
 h1 {
