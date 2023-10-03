@@ -1,0 +1,39 @@
+
+img {
+  width: 100%;
+}
+
+body {
+  background: #E9D7D1;
+}
+
+div.content {
+  max-width: 50em;
+  margin: 2em auto;
+}
+
+div.header {
+  margin: 4em 0;
+  width: 80%;
+}
+
+h1 {
+  font-family: 'Inter', sans-serif;
+}
+
+p {
+  font-family: 'Zilla Slab', 'Times New Roman', serif;
+  color: #3a3a3a;
+  font-weight: 300;
+  font-size: 120%;
+  line-height: 150%;
+}
+
+a {
+  color: #3a3a3a;
+  text-decoration: underline;
+}
+
+a:hover {
+  font-weight: 800;
+}
