@@ -20,7 +20,7 @@ div.content {
 }
 
 div.header {
-  margin-bottom: 2em;
+  margin-bottom: 1.2em;
   max-width: 30em;
 }
 
@@ -43,4 +43,8 @@ a {
 
 a:hover {
   font-weight: 800;
+}
+
+img.logo {
+  width: 60%;
 }
