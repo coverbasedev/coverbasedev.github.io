@@ -1,0 +1,151 @@
+/* Header */
+.large-header {
+	position: relative;
+	width: 100%;
+	background: #333;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+	z-index: 1;
+}
+
+.site .large-header {
+	background: #fff;
+}
+
+.main-title {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: #dcd6cf;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+
+.site .main-title {
+	text-transform: uppercase;
+	font-size: 4.2em;
+	letter-spacing: 0.1em;
+  font-weight: 600;
+}
+
+.main-title .thin {
+	font-weight: 200;
+}
+
+/* Email entry field & button */
+.coverbase-entry {
+  width: 400px;
+  margin: 0 auto;
+}
+
+fieldset {
+  display: block;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-before: 0em;
+  -webkit-padding-start: 0em;
+  -webkit-padding-end: 0em;
+  -webkit-padding-after: 0em;
+  border: 0px;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  min-width: -webkit-min-content;
+  padding: 30px;
+  text-align: center;
+  margin: auto;
+}
+
+.ghost-input {
+  display: block;
+  font-weight:200;
+  width: 50%;
+  font-size: 20px;
+  border:0px;
+  outline: none;
+  width: 100%;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #95a5a6;
+  background: #fff;
+  font-family: Inter;
+  padding: 10px 15px;
+  margin: 30px 0px;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.ghost-input:focus {
+  border-bottom:1px solid #ddd;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #95a5a6;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: #95a5a6;
+   opacity: 1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: #95a5a6;
+   opacity: 1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #95a5a6;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: #95a5a6;
+}
+
+.ghost-button {
+  background-color: transparent;
+  border:2px solid #ddd;
+  color:#95a5a6;
+  margin: 0 auto;
+  padding:10px 30px; 
+  min-width: 200px;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.ghost-button:hover {
+  border:2px solid #95a5a6;
+}
+
+.coverbase-email {
+  /*bottom: 0;*/
+  padding-bottom: 15px;
+  font-size: 12px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.coverbase-email:before {
+  content: "\0063\006f\006e\0074\0061\0063\0074\0040\0063\006f\0076";
+  color: #95a5a6;
+}
+
+.coverbase-email:after {
+  content: "\0065\0072\0062\0061\0073\0065\002e\0061\0069";
+  color: #95a5a6;
+}
+
+@media only screen and (max-width : 768px) {
+	.site .main-title {
+		font-size: 3em;
+	}
+}

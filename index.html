@@ -1,32 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Coverbase</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab" />
-    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
-  </head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-71NQVT3FD1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-71NQVT3FD1');
-  </script>
-  <body>
-    <div class="container">
-      <div class="content">
-        <div class="header">
-          <img class="logo" src="assets/logotight.png">
-        </div>
-        <p>Coverbase helps companies to manage emergent risks.<br>We envision a future where technology isn’t just a risk problem, but also a risk solution.</p>
-        <p>To learn more, send us a note at <a href='mailto:contact@coverbase.ai'>contact@coverbase.ai</a>.</p>
-      </div>
-    </div>
-  </body>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Coverbase</title>
+		<meta name="description" content="coverbase" />
+		<meta name="keywords" content="coverbase" />
+		<meta name="author" content="coverbase" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;600&display=swap" rel="stylesheet">
+
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-SYNSKYT2HL"></script>
+		<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+
+  		gtag('config', 'G-SYNSKYT2HL');
+		</script>
+
+	</head>
+
+	<body>
+		<div class="container site">
+			<div class="content">
+				<div id="large-header" class="large-header">
+					<canvas id="main-canvas"></canvas>
+					<h1 class="main-title">Cover<span class="thin">base</span></h1>
+				</div>
+				<div class="coverbase-header">
+					<h1>Coverbase helps companies manage B2B risk.<span>Launching Soon</span></h1>
+				</div>
+				<div class="coverbase-email"></div>
+			</div><!-- /content -->
+		</div><!-- /container -->
+		<script src="js/TweenLite.min.js"></script>
+		<script src="js/EasePack.min.js"></script>
+		<script src="js/rAF.js"></script>
+		<script src="js/client.js"></script>
+	</body>
 </html>
