@@ -14,6 +14,8 @@
 }
 
 .main-title {
+	width: 180px;
+	opacity: 20%;
 	position: absolute;
 	margin: 0;
 	padding: 0;
@@ -23,17 +25,6 @@
 	left: 50%;
 	-webkit-transform: translate3d(-50%,-50%,0);
 	transform: translate3d(-50%,-50%,0);
-}
-
-.site .main-title {
-	text-transform: uppercase;
-	font-size: 4.2em;
-	letter-spacing: 0.1em;
-  font-weight: 600;
-}
-
-.main-title .thin {
-	font-weight: 200;
 }
 
 /* Email entry field & button */
