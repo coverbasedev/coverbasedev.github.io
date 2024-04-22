@@ -1,0 +1,119 @@
+/**
+ * This is the global styles file. It MUST be imported in main.js.
+ * Do not white styles here, use _styles directory instead.
+ * */
+:root {
+  --transition-default: all 0.5s ease 0s;
+  --scrollbar-width: 40px;
+  --js-scrollbar-width: 0;
+  --scrollbar-thumb-color: var(--basic-palette--tone-300);
+  --scrollbar-background-color: var(--basic-palette--tone-1);
+}
+@keyframes movingLine {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-50%);
+  }
+}
+@keyframes rotateElement {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+:focus-visible {
+  outline: currentColor solid 1px;
+  outline-offset: 0.25em;
+  transition: var(--transition-default);
+}
+.w-richtext ol,
+.w-richtext ul {
+  overflow: visible;
+}
+.w-richtext > :first-child {
+  margin-block-start: 0;
+}
+.w-richtext > :last-child {
+  margin-block-end: 0;
+}
+.w-webflow-badge {
+  display: none !important;
+}
+body.js--locked {
+  overflow: hidden;
+  padding-inline-end: var(--js-scrollbar-width);
+}
+::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-background-color);
+}
+::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+  background-color: var(--scrollbar-background-color);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb-color);
+}
+* {
+  scrollbar-color: var(--scrollbar-thumb-color) var(--scrollbar-background-color);
+  scrollbar-width: thin;
+}
+::selection {
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  background-color: var(--basic-palette--tone-1000) !important;
+  color: var(--basic-palette--tone-1) !important;
+  -webkit-text-fill-color: var(--basic-palette--tone-1) !important;
+}
+textarea {
+  resize: none;
+}
+.input:-webkit-autofill, .input:-webkit-autofill:hover, .input:-webkit-autofill:focus {
+  transition: background-color 5000s ease-in-out 0s;
+}
+.input.input--tone-100:-webkit-autofill, .input.input--tone-100:-webkit-autofill:hover, .input.input--tone-100:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px var(--basic-palette--tone-100) inset;
+}
+.input.input--tone-1:-webkit-autofill, .input.input--tone-1:-webkit-autofill:hover, .input.input--tone-1:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px var(--basic-palette--tone-1) inset;
+}
+.swiper-pagination-bullet {
+  background: var(--basic-palette--tone-800);
+}
+.swiper-pagination-bullets {
+  width: unset !important;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 !important;
+  width: 0;
+  height: 0;
+  min-width: unset;
+  min-height: unset;
+  border-radius: 50%;
+  transition: all 700ms ease;
+  cursor: pointer;
+}
+.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  margin: 0 4.5px !important;
+  width: 10px;
+  height: 10px;
+}
+.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active-prev, .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active-next {
+  margin: 0 4.5px !important;
+  width: 6px;
+  height: 6px;
+}
+.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active-prev-prev, .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active-next-next {
+  margin: 0 4.5px !important;
+  width: 4px;
+  height: 4px;
+}
