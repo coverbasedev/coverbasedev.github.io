@@ -29,7 +29,7 @@ var initLogicPointerWrapperCopy = function initLogicPointerWrapperCopy() {
   var currentTextIndex = 0;
   var currentCharacterIndex = 0;
   var typingSpeed = 35;
-  var pauseBetweenTexts = 900;
+  var pauseBetweenTexts = 1200;
   function type() {
     if (currentCharacterIndex === stakeholdersArray[currentTextIndex].length) {
       currentTextIndex = (currentTextIndex + 1) % stakeholdersArray.length;
